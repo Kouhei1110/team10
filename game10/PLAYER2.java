@@ -14,13 +14,13 @@ public class PLAYER2 extends Actor
      */
     public void act() 
     {
+        int x = getX();
+        int y = getY();
         if( Greenfoot.isKeyDown( "up" )){
-        setRotation(-90);
-        move(6);
+        setLocation( x,y-6 );
     }
     if( Greenfoot.isKeyDown( "down" )){
-        setRotation(90);
-        move(6);
+        setLocation( x,y+6 );
     }
     }    
 }

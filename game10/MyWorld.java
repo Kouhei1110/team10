@@ -17,8 +17,9 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 450, 1);
+        getBackground().scale( 1070,600 );
+        addObject(new BALL(), 400, 225);
         addObject(new PLAYER1(), 50, 225);
         addObject(new PLAYER2(), 750, 225);
-        addObject(new BALL(), 400, 225);
     }
 }
